@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casa Firme | Mantenimiento de Jardín y Arreglos del Hogar – Puerto Piray / Eldorado</title>
+  <meta name="description" content="Planes mensuales de jardín, arreglos del hogar y obra fina chica. Servicio local en Puerto Piray y Eldorado. Checklist + fotos, garantía 7 días y atención prioritaria según plan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif}
+    .card{backdrop-filter:saturate(1.1) blur(2px)}
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/90 border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#inicio" class="font-extrabold text-lg tracking-tight">CASA FIRME</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#servicios" class="hover:text-emerald-700">Servicios</a>
+        <a href="#como-trabajamos" class="hover:text-emerald-700">Cómo trabajamos</a>
+        <a href="#contacto" class="hover:text-emerald-700">Contacto</a>
+        <a href="https://wa.me/543751407097?text=Hola!%20Quiero%20cotizar%20mi%20plan%20mensual." target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-700">Cotizar por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative">
+    <div class="relative">
+      <img src="img/diego-antes-despues.jpeg" alt="Corte de césped y mantenimiento de jardín" class="w-full h-[72vh] object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/0"></div>
+      <div class="absolute inset-0 flex items-end">
+        <div class="max-w-6xl mx-auto w-full px-4 pb-10">
+          <div class="bg-white/95 card rounded-2xl shadow-xl p-6 md:p-8 max-w-3xl">
+            <p class="text-xs uppercase tracking-[.2em] text-emerald-700 font-semibold">Puerto Piray · Eldorado</p>
+            <h1 class="mt-1 text-3xl md:text-4xl font-extrabold leading-tight">Tu casa al día, sin sorpresas</h1>
+            <p class="mt-3 text-neutral-700">Planes mensuales de <span class="font-semibold">jardinería</span>, <span class="font-semibold">arreglos del hogar</span> y <span class="font-semibold">obra fina chica</span>. Checklist con fotos, garantía 7 días y respuesta prioritaria según plan.</p>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <a href="https://wa.me/543751407097?text=Hola!%20Quiero%20cotizar%20mi%20plan%20mensual%20(Casa%20Firme)." target="_blank" class="rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold shadow hover:bg-emerald-700">Cotizar por WhatsApp</a>
+              <a href="#servicios" class="rounded-xl bg-neutral-100 px-5 py-3 font-semibold hover:bg-neutral-200">Ver servicios</a>
+            </div>
+            <div class="mt-4 flex items-center gap-3 text-xs text-neutral-600">
+              <span class="inline-flex items-center gap-1 bg-neutral-100 px-3 py-1 rounded-full">✔ Checklist + fotos</span>
+              <span class="inline-flex items-center gap-1 bg-neutral-100 px-3 py-1 rounded-full">✔ Garantía 7 días</span>
+              <span class="inline-flex items-center gap-1 bg-neutral-100 px-3 py-1 rounded-full">✔ Materiales a cargo del cliente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO TRABAJAMOS (formato captura 1) -->
+  <section id="como-trabajamos" class="max-w-6xl mx-auto px-4 pt-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center">SERVICIOS</h2>
+    <p class="mt-2 text-neutral-700 text-center">Hacé clic en una tarjeta para ver el detalle. La información se abre en una ventana y podés cerrarla para seguir viendo el resto.</p>
+
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- CARD: Corte de césped -->
+      <button data-open-modal="modal-cesped" class="group relative block rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="img/diego-motowadana.jpeg" alt="Corte de césped" class="h-48 w-full object-cover transition group-hover:scale-105 duration-300"/>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <span class="text-white font-extrabold text-2xl drop-shadow">CORTE DE CÉSPED</span>
+        </div>
+      </button>
+
+      <!-- CARD: Mantenimiento de jardín -->
+      <button data-open-modal="modal-jardin" class="group relative block rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="img/diego-poda.jpeg" alt="Mantenimiento de jardín" class="h-48 w-full object-cover transition group-hover:scale-105 duration-300"/>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <span class="text-white font-extrabold text-2xl drop-shadow">MANTENIMIENTO DE JARDÍN</span>
+        </div>
+      </button>
+
+      <!-- CARD: Arreglos del hogar -->
+      <button data-open-modal="modal-hogar" class="group relative block rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="img/diego-cerrajero.jpeg" alt="Arreglos del hogar" class="h-48 w-full object-cover transition group-hover:scale-105 duration-300"/>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <span class="text-white font-extrabold text-2xl drop-shadow">ARREGLOS DEL HOGAR</span>
+        </div>
+      </button>
+
+      <!-- CARD: Albañilería -->
+      <button data-open-modal="modal-albanileria" class="group relative block rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="img/diego-ceramica.jpeg" alt="Albañilería" class="h-48 w-full object-cover transition group-hover:scale-105 duration-300"/>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <span class="text-white font-extrabold text-2xl drop-shadow">ALBAÑILERÍA</span>
+        </div>
+      </button>
+
+      <!-- CARD: Pintura -->
+      <button data-open-modal="modal-pintura" class="group relative block rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="img/diego-pintura.jpeg" alt="Pintura" class="h-48 w-full object-cover transition group-hover:scale-105 duration-300"/>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <span class="text-white font-extrabold text-2xl drop-shadow">PINTURA</span>
+        </div>
+      </button>
+
+      <!-- CARD: Soldadura -->
+      <button data-open-modal="modal-soldadura" class="group relative block rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="img/diego-soldadura.jpeg" alt="Soldadura" class="h-48 w-full object-cover transition group-hover:scale-105 duration-300"/>
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          <span class="text-white font-extrabold text-2xl drop-shadow">SOLDADURA</span>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- MODALES DE SERVICIOS -->
+  <div>
+    <!-- Modal base (clase .modal para manejar todos) -->
+    <!-- CORTE DE CÉSPED -->
+    <div id="modal-cesped" class="modal fixed inset-0 hidden z-50">
+      <div class="absolute inset-0 bg-black/60 modal-overlay"></div>
+      <div class="relative mx-auto mt-24 w-11/12 md:w-[720px] bg-white rounded-2xl shadow-2xl p-6">
+        <button class="absolute right-4 top-4 text-neutral-400 hover:text-neutral-700" data-close-modal>&times;</button>
+        <h3 class="text-2xl font-extrabold">Corte de césped (motoguadaña + bordeado)</h3>
+        <p class="mt-2 text-neutral-700">¿Te cortan el pasto y queda <b>desparejo</b> o con bordes sin terminar? Lo dejamos <b>parejo, prolijo y limpio</b> en una sola visita.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-neutral-800">
+          <li>Altura de corte según estación y tipo de césped.</li>
+          <li>Bordeado fino en canteros, paredes, veredas y alambrados.</li>
+          <li>Limpieza con soplado y recolección de restos (bolsas a cargo del cliente).</li>
+          <li>Seguridad: revisamos el área y retiramos objetos/piedras antes de iniciar.</li>
+          <li>Reporte: fotos antes/después por WhatsApp.</li>
+        </ul>
+        <p class="mt-3 text-neutral-700"><b>Por tamaño:</b> CH (≤120 m²) incluido. G (121–250 m²) +35%. XL a medida. Si el pasto está muy alto, hacemos <b>puesta a punto</b> (+20–30% una vez).</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200" data-close-modal>Cerrar</button>
+          <a href="https://wa.me/543751407097?text=Quiero%20cotizar%20CORTE%20DE%20C%C3%89SPED%20(Env%C3%ADo%20fotos%20y%20m%C2%B2)." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MANTENIMIENTO DE JARDÍN -->
+    <div id="modal-jardin" class="modal fixed inset-0 hidden z-50">
+      <div class="absolute inset-0 bg-black/60 modal-overlay"></div>
+      <div class="relative mx-auto mt-24 w-11/12 md:w-[720px] bg-white rounded-2xl shadow-2xl p-6">
+        <button class="absolute right-4 top-4 text-neutral-400 hover:text-neutral-700" data-close-modal>&times;</button>
+        <h3 class="text-2xl font-extrabold">Mantenimiento de jardín</h3>
+        <p class="mt-2 text-neutral-700">¿El jardín se te va de las manos? Lo dejamos <b>ordenado y sano</b> mes a mes para que solo disfrutes.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-neutral-800">
+          <li>Poda baja (hasta 2,5 m) y formación de arbustos/cercos.</li>
+          <li>Desmalezado en canteros y perímetros; limpieza de hojas.</li>
+          <li>Canaletas: limpieza hasta 20 m lineales por visita.</li>
+          <li>Suelo: fertilización básica y cobertura si el cliente provee.</li>
+          <li>Asesoría de riego y calendario estacional.</li>
+        </ul>
+        <p class="mt-3 text-neutral-700"><b>Por tamaño:</b> CH incluido; G +35%. Si hace mucho que no se mantiene, aplicamos <b>puesta a punto</b> el primer mes.</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200" data-close-modal>Cerrar</button>
+          <a href="https://wa.me/543751407097?text=Quiero%20cotizar%20MANTENIMIENTO%20DE%20JARD%C3%8DN%20(Env%C3%ADo%20fotos%20y%20m%C2%B2)." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARREGLOS DEL HOGAR -->
+    <div id="modal-hogar" class="modal fixed inset-0 hidden z-50">
+      <div class="absolute inset-0 bg-black/60 modal-overlay"></div>
+      <div class="relative mx-auto mt-24 w-11/12 md:w-[720px] bg-white rounded-2xl shadow-2xl p-6">
+        <button class="absolute right-4 top-4 text-neutral-400 hover:text-neutral-700" data-close-modal>&times;</button>
+        <h3 class="text-2xl font-extrabold">Arreglos del hogar (handyman)</h3>
+        <p class="mt-2 text-neutral-700">¿La canilla gotea, el foco no prende o el picaporte no cierra? Soluciones <b>rápidas y prolijas</b> sin vueltas.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-neutral-800">
+          <li>Plomería básica: cueritos/sifones, pérdidas y sellados.</li>
+          <li>Electricidad básica: focos, apliques, tomas y llaves.</li>
+          <li>Cerrajería ligera: ajuste/instalación de picaportes y bisagras.</li>
+          <li>Sellados de silicona; destape manual sin máquina.</li>
+        </ul>
+        <p class="mt-3 text-neutral-700"><b>Alcance y tiempos:</b> incluido en planes Amplio/Integral. La mayoría de arreglos entran en 1–2 h. Si requiere más tiempo o piezas especiales, lo cotizamos antes.</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200" data-close-modal>Cerrar</button>
+          <a href="https://wa.me/543751407097?text=Quiero%20cotizar%20ARREGLOS%20DEL%20HOGAR%20(Describo%20el%20problema%20%2B%20fotos)." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALBAÑILERÍA -->
+    <div id="modal-albanileria" class="modal fixed inset-0 hidden z-50">
+      <div class="absolute inset-0 bg-black/60 modal-overlay"></div>
+      <div class="relative mx-auto mt-24 w-11/12 md:w-[720px] bg-white rounded-2xl shadow-2xl p-6">
+        <button class="absolute right-4 top-4 text-neutral-400 hover:text-neutral-700" data-close-modal>&times;</button>
+        <h3 class="text-2xl font-extrabold">Albañilería de mantenimiento</h3>
+        <p class="mt-2 text-neutral-700">Tapamos fisuras, reparamos bordes y dejamos terminaciones <b>como nuevas</b> para que tu casa no se deteriore.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-neutral-800">
+          <li>Revoques y masillado de golpes/fisuras pequeñas.</li>
+          <li>Colocación/reposición de cerámica en áreas chicas.</li>
+          <li>Sellados e impermeabilización chica en encuentros y zócalos.</li>
+          <li>Techo de chapa: fijaciones, sellos y recambios puntuales.</li>
+        </ul>
+        <p class="mt-3 text-neutral-700"><b>Por alcance:</b> incluido en <b>Integral</b> hasta 20 m²/mes (o 20 m lineales). Trabajos más grandes se cotizan aparte.</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200" data-close-modal>Cerrar</button>
+          <a href="https://wa.me/543751407097?text=Quiero%20cotizar%20ALBA%C3%91ILER%C3%8DA%20(Indicar%20%C3%A1rea%20y%20m%C2%B2)." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PINTURA -->
+    <div id="modal-pintura" class="modal fixed inset-0 hidden z-50">
+      <div class="absolute inset-0 bg-black/60 modal-overlay"></div>
+      <div class="relative mx-auto mt-24 w-11/12 md:w-[720px] bg-white rounded-2xl shadow-2xl p-6">
+        <button class="absolute right-4 top-4 text-neutral-400 hover:text-neutral-700" data-close-modal>&times;</button>
+        <h3 class="text-2xl font-extrabold">Pintura</h3>
+        <p class="mt-2 text-neutral-700">¿Pintadas que manchan todo y al mes descascaran? Trabajamos con <b>preparación</b> y cuidado para un resultado prolijo.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-neutral-800">
+          <li>Preparación: lijado suave y corrección de microfisuras.</li>
+          <li>Protección de muebles/pisos y cortes prolijos.</li>
+          <li>Aplicación uniforme con rodillo/brocha.</li>
+          <li>Limpieza final del área de trabajo.</li>
+        </ul>
+        <p class="mt-3 text-neutral-700"><b>Alcance:</b> incluido en <b>Integral</b> hasta 20 m²/mes. Alturas >2,5 m o frentes completos se cotizan aparte.</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200" data-close-modal>Cerrar</button>
+          <a href="https://wa.me/543751407097?text=Quiero%20cotizar%20PINTURA%20(Indicar%20m%C2%B2%20y%20superficie)." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOLDADURA -->
+    <div id="modal-soldadura" class="modal fixed inset-0 hidden z-50">
+      <div class="absolute inset-0 bg-black/60 modal-overlay"></div>
+      <div class="relative mx-auto mt-24 w-11/12 md:w-[720px] bg-white rounded-2xl shadow-2xl p-6">
+        <button class="absolute right-4 top-4 text-neutral-400 hover:text-neutral-700" data-close-modal>&times;</button>
+        <h3 class="text-2xl font-extrabold">Soldadura de mantenimiento</h3>
+        <p class="mt-2 text-neutral-700">Rejas flojas, bisagras vencidas o portones desalineados. Reparamos con <b>EPP, control de chispas</b> y terminación básica.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-neutral-800">
+          <li>Refuerzo de bisagras, soldado de grietas y fijación de soportes.</li>
+          <li>Pequeñas estructuras y reparaciones en rejas/portones.</li>
+          <li>Pintura anticorrosiva si el cliente provee.</li>
+        </ul>
+        <p class="mt-3 text-neutral-700"><b>Alcance:</b> incluido en <b>Integral</b> como mantenimiento. Trabajos estructurales o grandes superficies se cotizan como proyecto.</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button class="px-4 py-2 rounded-xl bg-neutral-100 hover:bg-neutral-200" data-close-modal>Cerrar</button>
+          <a href="https://wa.me/543751407097?text=Quiero%20cotizar%20SOLDADURA%20(Describir%20pieza%20y%20fotos)." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- PLANES / PRECIOS -->
+  <!-- PLANES / PRECIOS (estilo Hostinger, en blanco) -->
+  <!-- REFUERZO DE PROPUESTA DE VALOR -->
+  <section id="refuerzo" class="max-w-6xl mx-auto px-4 pt-10 pb-6">
+    <div class="rounded-3xl border border-emerald-100 bg-emerald-50/60 p-6 md:p-10 shadow-sm">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-center">¿Y si pudieras tener tu casa al día con una sola cuota mensual?</h2>
+      <p class="mt-3 text-center text-neutral-700 max-w-3xl mx-auto">El césped crece, la canilla gotea y siempre falta tiempo. Coordinar cinco oficios distintos te come plata y paciencia. <span class="font-semibold">Solución:</span> con <span class="font-semibold">Casa Firme</span> tenés <span class="font-semibold">un plan mensual</span> que mantiene tu hogar y resuelve lo urgente. <span class="font-semibold">Nosotros organizamos, vos disfrutás.</span></p>
+
+      <div class="mt-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Col izquierda: lo que resolvemos -->
+        <div>
+          <h3 class="text-lg font-extrabold">Lo que resolvemos mes a mes</h3>
+          <ul class="mt-3 space-y-2 text-neutral-800">
+            <li class="flex items-start gap-2"><span>✔</span><span><b>Césped</b> parejo y bordeado.</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span><b>Jardín en forma</b>: poda baja, desmalezado y canaletas.</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span><b>Arreglos del hogar</b>: canillas, pérdidas, focos, picaportes.</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span><b>Obra fina chica</b>: pintura, revoques y cerámicas puntuales.</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span><b>Herrería de mantenimiento</b>: rejas, bisagras y portones.</span></li>
+          </ul>
+        </div>
+        <!-- Col derecha: por qué conviene -->
+        <div>
+          <h3 class="text-lg font-extrabold">¿Por qué conviene?</h3>
+          <div class="mt-3 grid grid-cols-2 gap-3 text-sm">
+            <span class="inline-flex items-center justify-center rounded-xl bg-white border border-emerald-100 px-3 py-2">Agenda fija</span>
+            <span class="inline-flex items-center justify-center rounded-xl bg-white border border-emerald-100 px-3 py-2">Atención prioritaria</span>
+            <span class="inline-flex items-center justify-center rounded-xl bg-white border border-emerald-100 px-3 py-2">Checklist + fotos</span>
+            <span class="inline-flex items-center justify-center rounded-xl bg-white border border-emerald-100 px-3 py-2">Garantía 7 días</span>
+            <span class="inline-flex items-center justify-center rounded-xl bg-white border border-emerald-100 px-3 py-2 col-span-2">Servicio local: Puerto Piray y Eldorado</span>
+          </div>
+          <div class="mt-5">
+            <a href="#planes" class="inline-flex rounded-xl bg-emerald-600 text-white font-semibold px-5 py-3 hover:bg-emerald-700">Ver planes</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-6 text-xs text-neutral-600 text-center">CH ≤ 120 m² · G 121–250 m² · Materiales a cargo del cliente (podemos gestionarlos con ticket).</p>
+    </div>
+  </section>
+
+  <section id="planes" class="max-w-6xl mx-auto px-4 pt-6 pb-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center">Planes y precios</h2>
+    <p class="mt-2 text-neutral-700 text-center">Precios en <b>pesos argentinos</b>. Hogar estándar <b>(CH ≤ 120 m²)</b>. Propiedad grande <b>(G 121–250 m²)</b> – ver precio G en cada plan. XL a medida.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Básico -->
+      <div class="relative rounded-3xl bg-white border border-neutral-200 shadow-xl overflow-hidden">
+        <div class="p-6">
+          <h3 class="text-lg font-extrabold tracking-tight">BÁSICO</h3>
+          <div class="mt-2 flex items-end gap-2">
+            <span class="text-4xl font-extrabold">$40.000</span>
+            <span class="text-neutral-500 mb-1">/mes · CH</span>
+          </div>
+          <div class="mt-1 text-xs text-neutral-600">G: <span class="font-semibold">$60.000</span> /mes</div>
+          <a href="https://wa.me/543751407097?text=Quiero%20el%20PLAN%20B%C3%81SICO%20(%24%2040.000%20CH%20%7C%20%2460.000%20G)." target="_blank" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-neutral-900 text-white font-semibold py-3 hover:bg-neutral-800">Elegir plan</a>
+
+          <ul class="mt-5 space-y-2 text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span>✔</span><span>Corte de césped</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Mantenimiento de jardín</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Limpieza de patio</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Poda (baja)</span></li>
+            <li class="flex items-start gap-2 text-neutral-500"><span>ℹ</span><span>Mensual · Checklist + fotos</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Amplio (destacado) -->
+      <div class="relative rounded-3xl bg-white border-2 border-emerald-600 shadow-2xl overflow-hidden">
+        <div class="absolute left-0 right-0 -top-3 mx-auto w-fit rounded-full bg-emerald-600 px-4 py-1 text-white text-xs font-bold shadow">MÁS ELEGIDO</div>
+        <div class="p-6">
+          <h3 class="text-lg font-extrabold tracking-tight">AMPLIO</h3>
+          <div class="mt-2 flex items-end gap-2">
+            <span class="text-4xl font-extrabold">$85.000</span>
+            <span class="text-neutral-500 mb-1">/mes · CH</span>
+          </div>
+          <div class="mt-1 text-xs text-neutral-600">G: <span class="font-semibold">$100.000</span> /mes</div>
+          <a href="https://wa.me/543751407097?text=Quiero%20el%20PLAN%20AMPLIO%20(%24%2085.000%20CH%20%7C%20%24100.000%20G)." target="_blank" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold py-3 hover:bg-emerald-700">Elegir plan</a>
+
+          <ul class="mt-5 space-y-2 text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span>✔</span><span>Todo lo del <b>Básico</b></span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Emergencias domiciliarias</span></li>
+            <li class="ml-6 text-neutral-700">• Cambio/ajuste de canillas</li>
+            <li class="ml-6 text-neutral-700">• Pérdidas de agua</li>
+            <li class="ml-6 text-neutral-700">• Focos (cambio/instalación)</li>
+            <li class="ml-6 text-neutral-700">• Arreglo/instalación de picaportes</li>
+            <li class="ml-6 text-neutral-700">• Limpieza de canaletas</li>
+            <li class="ml-6 text-neutral-700">• Destape de cañerías e inodoros</li>
+            <li class="flex items-start gap-2 text-neutral-500"><span>ℹ</span><span>Mensual · Checklist + fotos</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Integral -->
+      <div class="relative rounded-3xl bg-white border border-neutral-200 shadow-xl overflow-hidden">
+        <div class="p-6">
+          <h3 class="text-lg font-extrabold tracking-tight">INTEGRAL</h3>
+          <div class="mt-2 flex items-end gap-2">
+            <span class="text-4xl font-extrabold">$120.000</span>
+            <span class="text-neutral-500 mb-1">/mes · CH</span>
+          </div>
+          <div class="mt-1 text-xs text-neutral-600">G: <span class="font-semibold">$150.000</span> /mes</div>
+          <a href="https://wa.me/543751407097?text=Quiero%20el%20PLAN%20INTEGRAL%20(%24%20120.000%20CH%20%7C%20%24150.000%20G)." target="_blank" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-neutral-900 text-white font-semibold py-3 hover:bg-neutral-800">Elegir plan</a>
+
+          <ul class="mt-5 space-y-2 text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span>✔</span><span>Todo lo del <b>Amplio</b></span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Trabajos de pintura (hasta 20 m²/mes)</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Albañilería (hasta 20 m² o 20 m lineales/mes)</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Colocación y reparación de techo (hasta 20 m²/mes)</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Colocación de cerámica (hasta 20 m²/mes)</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Soldaduras de mantenimiento</span></li>
+            <li class="flex items-start gap-2"><span>✔</span><span>Soluciones eléctricas básicas</span></li>
+            <li class="flex items-start gap-2 text-neutral-500"><span>ℹ</span><span>Mensual · Checklist + fotos</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 text-xs text-neutral-600 text-center">
+      <p><b>Materiales</b> por cuenta del cliente (podemos gestionarlos: costo +12% con ticket). <b>Puerto Piray</b> sin viático. <b>Eldorado</b> con viático por visita. Reprogramación con 24 h. Garantía 7 días en reparaciones.</p>
+    </div>
+  </section>
+
+  <main id="servicios" class="max-w-6xl mx-auto px-4">
+    <!-- Nota de alcance -->
+    <div class="my-10 text-sm text-neutral-600">
+      <p>Alcance y límites: trabajos en altura (&gt;2,5 m), gas, tableros eléctricos complejos, impermeabilizaciones integrales y obras mayores se presupuestan aparte o se derivan. Los <span class="font-semibold">materiales</span> los aporta el cliente (podemos gestionarlos: costo + 12% con ticket). Zonas: <span class="font-semibold">Puerto Piray</span> sin viático y <span class="font-semibold">Eldorado</span> con viático por visita.</p>
+    </div>
+
+    <!-- CTA final -->
+    <div id="contacto" class="my-14 flex flex-col md:flex-row items-center justify-between gap-4 bg-emerald-600 text-white rounded-2xl p-6 md:p-8 shadow-lg">
+      <div>
+        <h3 class="text-2xl font-extrabold">¿Listo para dejar tu casa al día?</h3>
+        <p class="mt-1 text-emerald-50">Enviá fotos y m² aproximados por WhatsApp y te cotizamos en 1 minuto.</p>
+      </div>
+      <a href="https://wa.me/543751407097?text=Hola!%20Quiero%20cotizar%20mi%20plan%20mensual%20(Casa%20Firme)." target="_blank" class="rounded-xl bg-white text-emerald-700 font-semibold px-6 py-3 hover:bg-emerald-50">Cotizar por WhatsApp</a>
+    </div>
+  </main>
+
+  <footer class="border-t border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-neutral-600 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <p>© <span id="year"></span> Casa Firme · Servicio local en Puerto Piray y Eldorado</p>
+      <p>Contacto directo: <a class="underline hover:text-emerald-700" href="https://wa.me/543751407097" target="_blank">+54 3751 407097 (WhatsApp)</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Modales: abrir/cerrar y asegurarnos que haya solo uno visible
+    const openButtons = document.querySelectorAll('[data-open-modal]');
+    const modals = document.querySelectorAll('.modal');
+
+    function closeAll(){
+      modals.forEach(m=>m.classList.add('hidden'));
+      document.body.classList.remove('overflow-hidden');
+    }
+    function openModal(id){
+      closeAll();
+      const m = document.getElementById(id);
+      if(m){ m.classList.remove('hidden'); document.body.classList.add('overflow-hidden'); }
+    }
+
+    openButtons.forEach(btn=>{
+      btn.addEventListener('click', ()=> openModal(btn.dataset.openModal));
+    });
+
+    modals.forEach(m=>{
+      m.addEventListener('click', (e)=>{
+        if(e.target.classList.contains('modal-overlay')) closeAll();
+      });
+      m.querySelectorAll('[data-close-modal]').forEach(c=> c.addEventListener('click', closeAll));
+    });
+
+    window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeAll(); });
+  </script>
+</body>
+</html>
